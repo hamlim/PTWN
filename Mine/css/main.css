@@ -1,0 +1,416 @@
+/* Css main stylesheet for Project Taiwan. Developed Spring 2014 by Matt Hamlin @panteravaca at Forge Labs.
+		All content is owned by Forge Labs please email hamlim@outlook.com if you have questions. */
+
+/* Document styles that do not change with the size of the display. */
+
+body{
+	background: #dddddd;
+	color: #333;
+}
+nav {
+	margin-top: 2%;
+}
+@media screen and (min-device-width: 1000px), screen and (min-width: 1000px){ /*desktop computer displays */
+	article {
+		margin-right: 7% !important;
+		margin-left: 13% !important;
+		background: #dddddd;
+	}
+	.tweet {
+	  padding:.25rem;
+	  box-shadow:0 1px 2px #aaa;
+	  background:white;
+	  margin:0 .5rem .5rem;
+	  border-radius:3px;
+		height: 71px;
+	}
+	.standalone-tweet .subject .header .profile .p-name {
+		font-size: 12px !important;
+	}
+	section {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #dddddd;
+	}
+
+	.score {
+		/*draw a circle around the number and make the number larger */
+		margin: 11.5px 0 31px 0;
+		border: 11.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		background-color: #27ae60;
+		color: white;
+		text-align: center;
+	}
+	.hot {
+		background-color: #e74c3c;
+		/*draw a circle around the number and make the number larger */
+		margin: 11.5px 0 31px 0;
+		border: 11.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.warm {
+		background-color: #e67e22;
+		/*draw a circle around the number and make the number larger */
+		margin: 11.5px 0 31px 0;
+		border: 11.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.content {
+		margin-top: 8px;
+	}
+
+	blockquote {
+		border-left: 0px;
+		margin-bottom: 0;
+		font-weight: 300;
+		font-size: 14px !important;
+		padding-right: 5px;
+	}
+}
+@media only screen and (min-device-width: 500px) and (max-device-width: 1000px), only screen and (min-width: 500px) adn (max-width: 1000px){ /*Tablet range devices */
+	article {
+		margin-right: 5.25% !important;
+		margin-left: 9.75% !important;
+		background: #dddddd;
+		margin-bottom: 2% !important;
+	}
+	.tweet {
+	  padding:.25rem;
+	  box-shadow:0 1px 2px #aaa;
+	  background:white;
+	  margin:0 .5rem .5rem;
+	  border-radius:3px;
+		height: 135px;
+	}
+	.standalone-tweet .subject .header .profile .p-name {
+		font-size: 12px !important;
+	}
+	section {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #dddddd;
+	}
+
+	.score {
+		/*draw a circle around the number and make the number larger */
+		margin: 45.25px 0 93px 0;
+		border: 45.25px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		background-color: #27ae60;
+		color: white;
+		text-align: center;
+	}
+	.hot {
+		background-color: #e74c3c;
+		/*draw a circle around the number and make the number larger */
+		margin: 45.25px 0 93px 0;
+		border: 45.25px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.warm {
+		background-color: #e67e22;
+		/*draw a circle around the number and make the number larger */
+		margin: 45.25px 0 93px 0;
+		border: 45.25px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.content {
+		margin-top: 8px;
+	}
+
+	blockquote {
+		border-left: 0px;
+		margin-bottom: 0;
+		font-weight: 300;
+		font-size: 14px !important;
+		padding-right: 5px;
+	}
+}
+@media only screen and (max-device-width: 500), only screen and (max-width: 500px){ /*Mobile phones */
+	article {
+		margin-right: 3.5% !important;
+		margin-left: 6.5% !important;
+		background: #dddddd;
+		margin-bottom: 2% !important;
+	}
+	.tweet {
+	  padding:.25rem;
+	  box-shadow:0 1px 2px #aaa;
+	  background:white;
+	  margin:0 .5rem .5rem;
+	  border-radius:3px;
+		height: 265px;
+	}
+	.standalone-tweet .subject .header .profile .p-name {
+		font-size: 12px !important;
+	}
+	section {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #dddddd;
+	}
+
+	.score {
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		background-color: #27ae60;
+		color: white;
+		text-align: center;
+	}
+	.hot {
+		background-color: #e74c3c;
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.warm {
+		background-color: #e67e22;
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.content {
+		margin-top: 8px;
+	}
+
+	blockquote {
+		border-left: 0px;
+		margin-bottom: 0;
+		font-weight: 300;
+		font-size: 14px !important;
+		padding-right: 5px;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) { /* iPhone 2g-4s  and Win-Mo phones (tested on Nokia 7x0 and 8xx device resolutions*/
+	/* .centre-title fix for iPhones and should be implemented in win-mo devices */
+	.centre-title {
+		font-size: 20px !important;
+		font-weight: bold !important;
+	}
+	article {
+		margin-right: 3.5% !important;
+		margin-left: 6.5% !important;
+		background: #dddddd;
+		margin-bottom: 2% !important;
+	}
+	.tweet {
+	  padding:.25rem;
+		padding-left: .05rem;
+		padding-right: .15rem;
+	  box-shadow:0 1px 2px #aaa;
+	  background:white;
+	  margin:0 .5rem .5rem;
+	  border-radius:3px;
+		height: 300px;
+	}
+	.standalone-tweet .subject .header .profile .p-name {
+		font-size: 12px !important;
+	}
+	section {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #dddddd;
+	}
+	.scores {
+		padding-left: 0px !important;
+	}
+	.score {
+		/*draw a circle around the number and make the number larger */
+		margin: 122.5px 0 260px 0;
+		border: 122.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		background-color: #27ae60;
+		color: white;
+		text-align: center;
+	}
+	.hot {
+		background-color: #e74c3c;
+		/*draw a circle around the number and make the number larger */
+		margin: 122.5px 0 260px 0;
+		border: 122.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.warm {
+		background-color: #e67e22;
+		/*draw a circle around the number and make the number larger */
+		margin: 122.5px 0 260px 0;
+		border: 122.5px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.content {
+		margin-top: 8px;
+		padding-left: 10px !important;
+	}
+
+	blockquote {
+		border-left: 0px;
+		margin-bottom: 0;
+		font-weight: 300;
+		font-size: 14px !important;
+		padding-right: 5px;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { /* iPhone 5 css */
+	/* .centre-title fix for iPhones and should be implemented in win-mo devices */
+	.centre-title {
+		font-size: 25px !important;
+		font-weight: bold !important;
+	}
+	article {
+		margin-right: 3.5% !important;
+		margin-left: 6.5% !important;
+		background: #dddddd;
+		margin-bottom: 2% !important;
+	}
+	.tweet {
+	  padding:.25rem;
+	  box-shadow:0 1px 2px #aaa;
+	  background:white;
+	  margin:0 .5rem .5rem;
+	  border-radius:3px;
+		height: 265px;
+	}
+	.standalone-tweet .subject .header .profile .p-name {
+		font-size: 12px !important;
+	}
+	section {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: #dddddd;
+	}
+
+	.score {
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		background-color: #27ae60;
+		color: white;
+		text-align: center;
+	}
+	.hot {
+		background-color: #e74c3c;
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.warm {
+		background-color: #e67e22;
+		/*draw a circle around the number and make the number larger */
+		margin: 105px 0 225px 0;
+		border: 105px;
+		display: block;
+		line-height: 55px;
+		border-radius: 50%;
+		width: 55px;
+		height: 55px;
+		font-size: 2em;
+		color: white;
+		text-align: center;
+	}
+	.content {
+		margin-top: 8px;
+	}
+
+	blockquote {
+		border-left: 0px;
+		margin-bottom: 0;
+		font-weight: 300;
+		font-size: 14px !important;
+		padding-right: 5px;
+	}
+}
