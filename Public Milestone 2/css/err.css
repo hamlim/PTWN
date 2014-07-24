@@ -1,0 +1,13 @@
+html {
+	background: #e74c3c;
+}
+.centre {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	text-align: center;
+}
+.shadow {
+	text-shadow: 0px 10px 10px rgba(158, 23, 37, 1);
+	font-size: 4em !important;;
+}
