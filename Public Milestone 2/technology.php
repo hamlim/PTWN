@@ -228,8 +228,8 @@
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="refresh" content="900">
 		
-		<link rel="icon" href="css/icons/globe.png">
-		<link rel="shortcut icon" sizes="256x256" href="css/icons/globe.png">
+		<link rel="icon" href="css/icons/technology.png">
+		<link rel="shortcut icon" sizes="256x256" href="css/icons/technology.png">
 		
 			
 		<link rel="stylesheet" href="css/normalize.css">
