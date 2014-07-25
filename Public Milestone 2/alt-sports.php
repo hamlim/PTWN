@@ -179,7 +179,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		
 		<meta name="author" content="Matt Hamlin">
-		<meta name="keywords" content="Curated, siimple, news">
+		<meta name="keywords" content="Curated, simple, news">
 		<meta name="description" content="CurrentWire: The news reimagined">
 		<meta name="application-name" conent="CurrentWire">
 	</head>
@@ -204,6 +204,7 @@
 						<li><a href="index.php" title="World News">World News</a></li>
 						<li><a href="sports.php" title="Sports News">Sports News</a></li>
 						<li><a href="business.php" title="Business News">Business News</a></li>
+						<li><a href="technology.php" title="Technology News">Technology News</a></li>
 						<li class="uk-active"><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 						
 					</ul>
