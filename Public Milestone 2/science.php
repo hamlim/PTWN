@@ -4,10 +4,10 @@
 	
 	//settings array including the application keys and secrets
 	$settings = array(
-			'oauth_access_token' => "118285131-FoS1LzfqZQ5r0V2N6mQvNob60UwBbiqMNCP3QK1C",
-			'oauth_access_token_secret' => "pJLrmw6qVtq23HaI062JlmUJgVtNze2D8pMiws30OWIB5",
-			'consumer_key' => "zXY4nOYNX9wCMflGDlTOJpGOf",
-			'consumer_secret' => "lqzhGMwaemeqxpsjuub9Er3YB9dIXK9SAlyPWk8ycULfVMYXxE"
+			'oauth_access_token' => "118285131-3neUlF1VYZhOrHzY5jhWDjN7SvEvn63vonvHQrOA",
+			'oauth_access_token_secret' => "lUKDzkHCUqUj01NEJMjcry2V4ZvkVDjn07hAaiVNp5HF5",
+			'consumer_key' => "JPAfonKWDF2mk3xFdG9Vt3JOx",
+			'consumer_secret' => "znQrv6QFiZdSIbf2aJfAwscMW60Uph63WBRGk2WQBYPjtkLi4J"
 	);
 	//base uri for retreiving the tweets
 	$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
@@ -15,21 +15,21 @@
 	//get fields for each news source
 	//I am sure that this could be developed in a for loop but I will
 	// simplify it as is for now (NOTE)
-	$getfields1 = '?screen_name=harvardbiz&count=10';
-	$getfields2 = '?screen_name=forbes&count=10';
-	$getfields3 = '?screen_name=inc&count=10';
-	$getfields4 = '?screen_name=fastcompany&count=10';
-	$getfields5 = '?screen_name=businessinsider&count=10';
-	$getfields6 = '?screen_name=ReutersBiz&count=10';
-	$getfields7 = '?screen_name=BBCBusiness&count=10';
-	$getfields8 = '?screen_name=MarketWatch&count=10';
-	$getfields9 = '?screen_name=WSJbusiness&count=10';
-	$getfields10 = '?screen_name=CNBC&count=10';
-	$getfields11 = '?screen_name=BloombergNews&count=10';
-	$getfields12 = '?screen_name=FinancialTimes&count=10';
-	$getfields13 = '?screen_name=BW&count=10';
-	$getfields14 = '?screen_name=CNNMoney&count=10';
-	$getfields15 = '?screen_name=FortuneMagazine&count=10';
+	$getfields1 = '?screen_name=NASA&count=10';
+	$getfields2 = '?screen_name=newscientist&count=10';
+	$getfields3 = '?screen_name=wiredscience&count=10';
+	$getfields4 = '?screen_name=sciam&count=10';
+	$getfields5 = '?screen_name=CERN&count=10';
+	$getfields6 = '?screen_name=ScienceNewsOrg&count=10';
+	$getfields7 = '?screen_name=ReutersScience&count=10';
+	$getfields8 = '?screen_name=NatGeo&count=10';
+	$getfields9 = '?screen_name=nytimjesscience&count=10';
+	$getfields10 = '?screen_name=TheScienceGuy&count=10';
+	$getfields11 = '?screen_name=neiltyson&count=10';
+	$getfields12 = '?screen_name=scifri&count=10';
+	$getfields13 = '?screen_name=Popsci&count=10';
+	$getfields14 = '?screen_name=USGS&count=10';
+	$getfields15 = '?screen_name=Cmdr_Hadfield&count=10';
 	
 	//determine the method to request the tweets
 	$requestMethod = 'GET';
@@ -51,7 +51,7 @@
 	
 	
 	
-	if (!file_exists("biz.txt")){// there is no file
+	if (!file_exists("sci.txt")){// there is no file
 		$sbool = true;
 		//source 1
 		$source1 = $twitter->setGetfield($getfields1)
@@ -118,7 +118,7 @@
 	}	else {
 		//the file is there and the time diff is within 15 minutes
 		//we grab the stuff from the json file and read it into the $source variables
-		$file = file_get_contents("biz.txt");
+		$file = file_get_contents("sci.txt");
 		//now we read in the array
 		//first we need to un-serialize the content
 		$data = unserialize($file); //should be the php array
@@ -220,7 +220,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CurrentWire: Business</title>
+		<title>CurrentWire: Science</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
@@ -228,8 +228,8 @@
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="refresh" content="900">
 		
-		<link rel="icon" href="css/icons/business.png">
-		<link rel="shortcut icon" sizes="256x256" href="css/icons/business.png">
+		<link rel="icon" href="css/icons/science.png">
+		<link rel="shortcut icon" sizes="256x256" href="css/icons/science.png">
 		
 			
 		<link rel="stylesheet" href="css/normalize.css">
@@ -247,7 +247,7 @@
 			<nav>
 				<div class="uk-grid">
 					<h3 class="sections uk-width-1-3 uk-text-center"><a href="#section" data-uk-offcanvas class="nolink uk-container-center">Sections</a></h3>
-					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Business News</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
+					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Science News</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
 					<h3 class="about right-title uk-width-1-3 uk-text-center"><a href="#about" data-uk-offcanvas class="nolink uk-container-center">About</a></h3>
 				</div>
 			</nav>
@@ -261,9 +261,9 @@
 					<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
 						<li><a href="index.php" title="World News">World News</a></li>
 						<li><a href="sports.php" title="Sports News">Sports News</a></li>
-						<li class="uk-active"><a href="business.php" title="Business News">Business News</a></li>
+						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li><a href="technology.php" title="Technology News">Technology News</a></li>
-						<liu><a href="science.php" title="Science News">Science News</a></liu>
+                        <li class="uk-active"><a href="science.php" title="Science News">Science News</a></li>
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 -->

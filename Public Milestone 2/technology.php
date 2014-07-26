@@ -29,7 +29,7 @@
 	$getfields12 = '?screen_name=TheNextWeb&count=10';
 	$getfields13 = '?screen_name=BBCTech&count=10';
 	$getfields14 = '?screen_name=RWW&count=10';
-	$getfields15 = '?screen_name=Scobelizer&count=10';
+	$getfields15 = '?screen_name=recode&count=10';
 	
 	//determine the method to request the tweets
 	$requestMethod = 'GET';
@@ -263,6 +263,7 @@
 						<li><a href="sports.php" title="Sports News">Sports News</a></li>
 						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li class="uk-active"><a href="technology.php" title="Technology News">Technology News</a></li>
+						<li><a href="science.php" title="Science News">Science News</a></li>
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 -->

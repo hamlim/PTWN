@@ -191,7 +191,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Curratd: Alt-Sports</title>
+		<title>CurrentWire: Alt-Sports</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
@@ -207,9 +207,9 @@
 		<link rel="stylesheet" href="css/main.css">
 		
 		<meta name="author" content="Matt Hamlin">
-		<meta name="keywords" content="Currated, siimple, news">
-		<meta name="description" content="Curratd: The news reimagined">
-		<meta name="application-name" conent="Curratd">
+		<meta name="keywords" content="Curated, simple, news">
+		<meta name="description" content="CurrentWire: The news reimagined">
+		<meta name="application-name" conent="CurrentWire">
 	</head>
 	<body>
 		<header>
@@ -242,7 +242,7 @@
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
-					<h1 class="uk-panel-title">About Curratd:</h1>
+					<h1 class="uk-panel-title">About CurrentWire:</h1>
 					<p>Curratd was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
 				</div>
 				<div class="uk-panel">
@@ -255,7 +255,7 @@
 				</div>
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">The website is not rendering properly for me!</h1>
-					<p>Reach out to <a href="https://twitter.com/panteravaca" target="_newtab">@panteravaca</a> on Twitter or email Matt at hamlim@outlook.com! We try to get back to every email or tweet; if you are tweeting use the hashtag #ptwn so we can find your questions easier.</p>
+					<p>Reach out to <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a> on Twitter or email Matt at hamlim@outlook.com! We try to get back to every email or tweet; if you are tweeting use the hashtag #ptwn so we can find your questions easier.</p>
 				</div>
 			</div>
 		</div>
