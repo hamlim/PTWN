@@ -96,7 +96,7 @@
 			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
 				<h3 class="uk-panel-title my-title">Sign-Up Now!</h3>
 				<p>Click the button below to begin signing up!</p>
-				<button id="sign-up-button" type="button" title="Sign-Up">Sign-Up!</button>
+				<button class="uk-button uk-button-success" id="sign-up-button" type="button" title="Sign-Up">Sign-Up!</button>
 			</section>
 			<section class="uk-text-center uk-align-center uk-panel uk-panel-box uk-panel-box-secondary uk-container-center my-width-footer">
 				<span>CurrentWire was developed independently by Matt Hamlin at Forge Labs. </span>
