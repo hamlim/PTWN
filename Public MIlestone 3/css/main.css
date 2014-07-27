@@ -10,6 +10,29 @@ body{
 nav {
 	margin-top: 2%;
 }
+.my-width {
+	width: 75%;
+	margin-left: 6.25%;
+	margin-top: 10%;
+	box-shadow: 0 1px 2px #aaa;
+	background: white;
+	border-radius: 3px;
+	font-size: 24px;
+	line-height: 2em;
+}
+.my-width-footer {
+	width: 75%;
+	margin-left: 6.25%;
+	margin-top: 10%;
+	box-shadow: 0 1px 2px #aaa;
+	background: white;
+	border-radius: 3px;
+	font-size: 16px;
+	line-height: 2em;
+}
+.my-title {
+	font-size: 30px;
+}
 @media screen and (min-device-width: 1000px), screen and (min-width: 1000px){ /*desktop computer displays */
 	article {
 		margin-right: 7% !important;
