@@ -269,6 +269,12 @@
 -->
 					</ul>
 				</div>
+				<div class="uk-panel uk-panel-header">
+					<h2 class="uk-panel-title">Home</h2>
+					<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
+						<li ><a href="index.php" title="Homepage">Home</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<!-- for the about information. -->
