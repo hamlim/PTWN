@@ -283,10 +283,7 @@
 					<h1 class="uk-panel-title">About CurrentWire:</h1>
 					<p>CurrentWire was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
 				</div>
-				<div class="uk-panel">
-					<h1 class="uk-panel-title">Formatting:</h1>
-					<p>Some may ask why the text formatting is the way that it is. The reason why these tweets don't look like other tweets on the web is because we at Forge Labs don't believe that the formatting of the tweets as provided from Twitter provides an easy way to read the content. We have kept all the classes and data the same for every element because we believe that the semantic data is important.</p>
-				</div>
+				
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">What are these numbers in circles?</h1>
 					<p>The numbers in the circles represent the score of the tweet. We have developed an advanced algorithm to track the trustworthiness of the sources and factor in the trustworthiness to calculate the score of specific tweets. This process is the method that we use to rank the tweets. The higher the score the more we think that that tweet is important to you.</p>
