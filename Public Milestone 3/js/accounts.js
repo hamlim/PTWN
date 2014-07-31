@@ -60,7 +60,7 @@ $(document).ready(function() {
 					} else {
 							$(error_elem).text('Oops! An error occured and your message could not be sent.');
 					}
-				});
+			});
 	});
 });
                   
