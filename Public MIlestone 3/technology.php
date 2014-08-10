@@ -259,11 +259,12 @@
 				<div class="uk-panel uk-panel-header">
 					<h2 class="uk-panel-title">News Sections:</h2>
 					<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
-						<li><a href="index.php" title="World News">World News</a></li>
+						<li><a href="world.php" title="World News">World News</a></li>
 						<li><a href="sports.php" title="Sports News">Sports News</a></li>
 						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li class="uk-active"><a href="technology.php" title="Technology News">Technology News</a></li>
 						<li><a href="science.php" title="Science News">Science News</a></li>
+						<li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 -->

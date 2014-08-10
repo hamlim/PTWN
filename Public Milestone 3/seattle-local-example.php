@@ -4,10 +4,10 @@
 	
 	//settings array including the application keys and secrets
 	$settings = array(
-			'oauth_access_token' => "118285131-FoS1LzfqZQ5r0V2N6mQvNob60UwBbiqMNCP3QK1C",
-			'oauth_access_token_secret' => "pJLrmw6qVtq23HaI062JlmUJgVtNze2D8pMiws30OWIB5",
-			'consumer_key' => "zXY4nOYNX9wCMflGDlTOJpGOf",
-			'consumer_secret' => "lqzhGMwaemeqxpsjuub9Er3YB9dIXK9SAlyPWk8ycULfVMYXxE"
+			'oauth_access_token' => "118285131-KMfN60H53G4EzwNlbTz1ViAYi42JRZ921P4hwt86",
+			'oauth_access_token_secret' => "xudkhZpSTvtkgAlmL31qvf30xnTgWQMOGGMAVWllmJudR",
+			'consumer_key' => "Eu8t4SYMzJQpnoBKvVoQXIUAG",
+			'consumer_secret' => "z0TfSIpc0D0lRcdxDYCXl1m7rF84fnbwgXSvax3lh0rsWQ79eA"
 	);
 	//base uri for retreiving the tweets
 	$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
@@ -15,21 +15,21 @@
 	//get fields for each news source
 	//I am sure that this could be developed in a for loop but I will
 	// simplify it as is for now (NOTE)
-	$getfields1 = '?screen_name=harvardbiz&count=10';
-	$getfields2 = '?screen_name=forbes&count=10';
-	$getfields3 = '?screen_name=inc&count=10';
-	$getfields4 = '?screen_name=fastcompany&count=10';
-	$getfields5 = '?screen_name=businessinsider&count=10';
-	$getfields6 = '?screen_name=ReutersBiz&count=10';
-	$getfields7 = '?screen_name=BBCBusiness&count=10';
-	$getfields8 = '?screen_name=MarketWatch&count=10';
-	$getfields9 = '?screen_name=WSJbusiness&count=10';
-	$getfields10 = '?screen_name=CNBC&count=10';
-	$getfields11 = '?screen_name=BloombergNews&count=10';
-	$getfields12 = '?screen_name=FinancialTimes&count=10';
-	$getfields13 = '?screen_name=BW&count=10';
-	$getfields14 = '?screen_name=CNNMoney&count=10';
-	$getfields15 = '?screen_name=FortuneMagazine&count=10';
+	$getfields1 = '?screen_name=SnohomishTimesw&count=10';
+	$getfields2 = '?screen_name=snocounty&count=10';
+	$getfields3 = '?screen_name=EverettHerald&count=10';
+	$getfields4 = '?screen_name=komonews&count=10';
+	$getfields5 = '?screen_name=KING5Seattle&count=10';
+	$getfields6 = '?screen_name=Q13Fox&count=10';
+	$getfields7 = '?screen_name=seattletimes&count=10';
+	$getfields8 = '?screen_name=WSdot&count=10';
+	$getfields9 = '?screen_name=heraldnetsports&count=10';
+	$getfields10 = '?screen_name=heraldnet&count=10';
+	$getfields11 = '?screen_name=breakingseanews&count=10';
+	$getfields12 = '?screen_name=Everett_weather&count=10';
+	$getfields13 = '?screen_name=seattle_today&count=10';
+	$getfields14 = '?screen_name=Seattle_Buzzz&count=10';
+	$getfields15 = '?screen_name=MyEverettNews&count=10';
 	
 	//determine the method to request the tweets
 	$requestMethod = 'GET';
@@ -51,7 +51,7 @@
 	
 	
 	
-	if (!file_exists("biz.txt")){// there is no file
+	if (!file_exists("sea.txt")){// there is no file
 		$sbool = true;
 		//source 1
 		$source1 = $twitter->setGetfield($getfields1)
@@ -118,7 +118,7 @@
 	}	else {
 		//the file is there and the time diff is within 15 minutes
 		//we grab the stuff from the json file and read it into the $source variables
-		$file = file_get_contents("biz.txt");
+		$file = file_get_contents("sea.txt");
 		//now we read in the array
 		//first we need to un-serialize the content
 		$data = unserialize($file); //should be the php array
@@ -220,7 +220,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CurrentWire: Business</title>
+		<title>CurrentWire: Seattle Local Area [Example]</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
@@ -228,8 +228,8 @@
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="refresh" content="900">
 		
-		<link rel="icon" href="css/icons/business.png">
-		<link rel="shortcut icon" sizes="256x256" href="css/icons/business.png">
+		<link rel="icon" href="css/icons/seattle.png"> <!-- TODO : change these icons! -->
+		<link rel="shortcut icon" sizes="256x256" href="css/icons/seattle.png">
 		
 			
 		<link rel="stylesheet" href="css/normalize.css">
@@ -247,7 +247,7 @@
 			<nav>
 				<div class="uk-grid">
 					<h3 class="sections uk-width-1-3 uk-text-center"><a href="#section" data-uk-offcanvas class="nolink uk-container-center">Sections</a></h3>
-					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Business News</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
+					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Seattle Local News</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
 					<h3 class="about right-title uk-width-1-3 uk-text-center"><a href="#about" data-uk-offcanvas class="nolink uk-container-center">About</a></h3>
 				</div>
 			</nav>
@@ -261,10 +261,10 @@
 					<ul class="uk-nav uk-nav-offcanvas" data-uk-nav>
 						<li><a href="world.php" title="World News">World News</a></li>
 						<li><a href="sports.php" title="Sports News">Sports News</a></li>
-						<li class="uk-active"><a href="business.php" title="Business News">Business News</a></li>
+						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li><a href="technology.php" title="Technology News">Technology News</a></li>
-						<li><a href="science.php" title="Science News">Science News</a></li>
-						<li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
+            <li><a href="science.php" title="Science News">Science News</a></li>
+						<li class="uk-active"><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 -->

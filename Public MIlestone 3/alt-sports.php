@@ -206,6 +206,7 @@
 						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li><a href="technology.php" title="Technology News">Technology News</a></li>
 						<li><a href="science.php" title="Science News">Science</a></li>
+						<li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
 						<li class="uk-active"><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 						
 					</ul>
