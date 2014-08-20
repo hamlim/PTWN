@@ -51,7 +51,7 @@
 	
 	
 	
-	if (!file_exists("biz.txt")){// there is no file
+	if (!file_exists("tech.txt")){// there is no file
 		$sbool = true;
 		//source 1
 		$source1 = $twitter->setGetfield($getfields1)
@@ -350,7 +350,7 @@
 			};
 			var sbool = <?php echo json_encode($sbool); ?>;
 		</script>
-		<script src="js/main.js"></script>
+		<script src="js/tech-main.js"></script>
 		
 		
 	</body>

@@ -353,7 +353,7 @@
 			};
 			var sbool = <?php echo json_encode($sbool); ?>;
 		</script>
-		<script src="js/main.js"></script>
+		<script src="js/sci-main.js"></script>
 		
 		
 	</body>
