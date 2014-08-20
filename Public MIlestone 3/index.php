@@ -90,6 +90,11 @@
 				</div>
 			</div>
 			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
+					<h4 class="uk-panel-title my-title">About:</h4>
+					<p>This product is still in an alpha stage, to get access to the news and content click on the sections link in the top left of the screen! If you find any problems please email me at hamlim@outlook.com, or contact me on twitter @immatthamlin. I hope you enjoy your experience!</p>
+			</section>
+<!--
+			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
 				<h3 class="uk-panel-title my-title">What is CurrentWire?</h1>
 				<p>CurrentWire is a curated news feed for you, the user. CurrentWire is full of sections that are created by curation specialists to create a better news reading experience. We the editors add in new secttions almost everyday!</p>
 			</section>
@@ -105,6 +110,7 @@
 			<section class="uk-text-center uk-align-center uk-panel uk-panel-box uk-panel-box-secondary uk-container-center my-width-footer">
 				<span>CurrentWire was developed independently by Matt Hamlin at Forge Labs. </span>
 			</section>
+-->
 		</article>
 		
 		
