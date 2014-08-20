@@ -300,7 +300,7 @@
 			<div class="error-modal uk-modal">
 				<div class="uk-modal-dialog">
 					<h1>We're sorry but we can't retrieve any tweets right now.</h1>
-					<p>Talk about a fail whale!</p>
+					<p>Talk about a fail whale! Try refreshing the page, if that didn't work send me an email! <a href="mailto:hamlim@outlook.com">hamlim@outlook.com</a></p>
 				</div>
 			</div>
 			<div class="welcome-modal uk-modal">
