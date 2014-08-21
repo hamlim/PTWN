@@ -33,7 +33,7 @@ $(document).ready(function() {
 				tweet.id = arr[i]["id_str"];
 				tweet.text = arr[i]["text"];
 				tweet.rtcount = arr[i]["retweet_count"];
-				tweet.score = ((arr[i]["retweet_count"]) + (arr[i]["retweet_count"]))/2.5; 
+				tweet.score = ((arr[i]["retweet_count"]) + (arr[i]["retweet_count"]))/0.5; 
 				tweets.push(tweet);
 			}
 		};
