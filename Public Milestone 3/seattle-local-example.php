@@ -15,7 +15,7 @@
 	//get fields for each news source
 	//I am sure that this could be developed in a for loop but I will
 	// simplify it as is for now (NOTE)
-	$getfields1 = '?screen_name=SnohomishTimesw&count=10';
+	$getfields1 = '?screen_name=SnohomishTimes&count=10';
 	$getfields2 = '?screen_name=snocounty&count=10';
 	$getfields3 = '?screen_name=EverettHerald&count=10';
 	$getfields4 = '?screen_name=komonews&count=10';
