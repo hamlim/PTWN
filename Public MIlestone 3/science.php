@@ -23,7 +23,7 @@
 	$getfields6 = '?screen_name=ScienceNewsOrg&count=10';
 	$getfields7 = '?screen_name=ReutersScience&count=10';
 	$getfields8 = '?screen_name=NatGeo&count=10';
-	$getfields9 = '?screen_name=nytimjesscience&count=10';
+	$getfields9 = '?screen_name=nytimesscience&count=10';
 	$getfields10 = '?screen_name=TheScienceGuy&count=10';
 	$getfields11 = '?screen_name=neiltyson&count=10';
 	$getfields12 = '?screen_name=scifri&count=10';

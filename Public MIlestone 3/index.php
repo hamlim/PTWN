@@ -117,7 +117,7 @@
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-		<script src="js/main.js"></script>
+		
 			
 	</body>
 </html>

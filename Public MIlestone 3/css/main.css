@@ -244,6 +244,10 @@ nav {
 	}
 }
 @media only screen and (max-device-width: 500), only screen and (max-width: 500px){ /*Mobile phones */
+	centre-title{
+		font-size: 15px !important;
+		font-weight: bold !important;
+	}
 	article {
 		margin-right: 3.5% !important;
 		margin-left: 6.5% !important;
