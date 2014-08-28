@@ -10,6 +10,12 @@ body{
 nav {
 	margin-top: 2%;
 }
+.card {
+	background:white;
+	margin:0 .5rem .5rem;
+	height: 10% !important;
+	width: 100% !important;
+}
 .my-width {
 	width: 75%;
 	margin-left: 6.25%;

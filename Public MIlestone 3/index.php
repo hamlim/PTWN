@@ -23,7 +23,7 @@
 		<meta name="application-name" content="CurrentWire">
 	</head>
 	<body>
-		<header>
+		<header class="card">
 			<!-- first the basic header structure. -->
 			<nav>
 				<div class="uk-grid">
