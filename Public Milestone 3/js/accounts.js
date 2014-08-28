@@ -36,31 +36,8 @@ $(document).ready(function() {
 	var form = $("#account-form");
 	var error_elem = $("#form-error");
 	//simultaneously from doing all the code and JSON generation I also want to get an email when someone signs up
-		// using tutorial from: http://blog.teamtreehouse.com/create-ajax-contact-form
+	// using tutorial from: http://blog.teamtreehouse.com/create-ajax-contact-form
 	//we need an event listener for when the form is submitted
-	$(form).submit(function(event){
-		event.preventDefault();
-		var formdata = $(form).serialize();
-		$.ajax({
-			type: "POST",
-			url: $(form).attr('action'),
-			data: formdata
-		})
-			.done(function(response) {
-					$(error_elem).text("Success! Expect an email shortly from one of our staff!");
-					$("#name").val('');
-					$("#uname").val('');
-					$("#email").val('');
-					$("#pass").val('');
-			})
-			.fail(function(data) {
-					// Set the message text.
-					if (data.responseText !== '') {
-							$(error_elem).text(data.responseText);
-					} else {
-							$(error_elem).text('Oops! An error occured and your message could not be sent.');
-					}
-			});
-	});
+	
 });
                   
