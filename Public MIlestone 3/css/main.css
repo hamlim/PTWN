@@ -102,7 +102,8 @@ nav {
 	article {
 		margin-right: 7% !important;
 		margin-left: 13% !important;
-		background: #dddddd;
+		margin-top: 10% !important;
+/*		background: #dddddd;*/
 	}
 	.tweet {
 	  padding:.25rem;
@@ -118,7 +119,7 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background: #dddddd;
+/*		background: #dddddd;*/
 	}
 
 	.score {
