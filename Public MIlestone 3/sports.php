@@ -241,7 +241,7 @@
 		<meta name="application-name" conent="CurrentWire">
 	</head>
 	<body>
-		<header>
+		<header class="card">
 			<!-- first the basic header structure. -->
 			<nav>
 				<div class="uk-grid">
@@ -348,7 +348,7 @@
 			var sbool = <?php echo json_encode($sbool); ?>;
 		</script>
 		<script src="js/main-s.js"></script>
-		
+		<script src="js/background-load.js"></script>
 		
 	</body>
 </html>
