@@ -12,6 +12,8 @@
 		<link rel="icon" href="css/icons/globe.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/globe.png">
 		
+		<!-- Parse -->
+		<script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 			
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
@@ -63,6 +65,7 @@
 		<!-- TODO change this info to Account login/other stuff dynamically with JS -->
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+<!--
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">About CurrentWire:</h1>
 					<p>CurrentWire was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
@@ -76,6 +79,7 @@
 					<h1 class="uk-panel-title">The website is not rendering properly for me!</h1>
 					<p>Reach out to <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a> on twitter or email Matt at hamlim@outlook.com! We try to get back to every email or tweet; if you are tweeting use the hashtag #ptwn so we can find your questions easier.</p>
 				</div>
+-->
 			</div>
 		</div>
 		<article class="uk-grid">
@@ -118,8 +122,8 @@
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-        <script src="js/background-load.js"></script>
-		
+    <script src="js/background-load.js"></script>
+		<script src="js/account.js"></script>
 			
 	</body>
 </html>

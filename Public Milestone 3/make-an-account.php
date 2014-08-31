@@ -53,7 +53,7 @@
                   <input type="password" id="password" name="password" required>
                 </div>
                 <div class="submit uk-form-row" id="form-submit">
-                  <button type="submit" class="ghost-btn">Register!</button>
+                  <button type="submit" class="ghost-btn" id="submit">Register!</button>
                 </div>
               </fieldset>
             </form>
@@ -61,6 +61,6 @@
 		</article>
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-		<script src="js/accounts.js"></script>
+		<script src="js/makeaccount.js"></script>
 	</body>
 </html>
