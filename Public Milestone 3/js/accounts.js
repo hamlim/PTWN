@@ -35,9 +35,47 @@ $(document).ready(function() {
   */
 	var form = $("#account-form");
 	var error_elem = $("#form-error");
+	var submit = $("#submit");
 	//simultaneously from doing all the code and JSON generation I also want to get an email when someone signs up
 	// using tutorial from: http://blog.teamtreehouse.com/create-ajax-contact-form
 	//we need an event listener for when the form is submitted
+  //-----------------------------------------------------------------
+	//Frome here on out we are using Parse to handle the user accounts
+	
+	//initalize the parse app for Currentwire
+	Parse.initialize("YgDl0bR96ttn6sU7QZlxg19UpRJYO3bYopYmjnga", "EdbYCzk1mvFZaavibA4oytclJ08iMrQGbhVkcbEZ");
+	var TestObject = Parse.Object.extend("TestObject");
+	var testObject = new TestObject();
+	testObject.save({foo: "bar"}).then(function(object) {
+		alert("yay! it worked");
+	});
+//	$("#submit").click(function() {
+		console.log("form submit button clicked");
+		// we need to scheck if the input is valid
+		var nameelem = $("#real-name");
+		var unameelem = $("#username");
+		var emailelem = $("#email");
+		var passelem = $("#password");
+		
+//		if(nameelem.value != ""  && unameelem.value != "" && emailelem.value != "" && passelem.value != ""){
+			var user = new Parse.User();
+			user.set("username", "matth");
+			user.set("password", "test");
+			user.set("email", "hamlinm@outlook.com");
+			user.set("name", "matt hamlin");
+			
+			user.signUp(null, {
+				success: function(user) {
+					console.log("you are logged in");
+					//redirect to account page
+					window.location.assign("http://n.myrpi.org/account.php");
+				},
+				error: function(user, error) {
+					alert("Error: " + error.code + " " + error.message);
+				}
+			});
+//		};
+//	});
 	
 });
                   

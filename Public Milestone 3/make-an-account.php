@@ -17,7 +17,9 @@
 
 		<link rel="icon" href="css/icons/add.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/add.png">
-
+		
+		<!-- Parse JS -->
+		<script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
@@ -32,7 +34,7 @@
 		<article>
           <section id="form">
             <div id="error"></div>
-            <form id="account-form" method="post" action="mailer.php" class="uk-form uk-form-horizontal">
+            <form id="account-form" method="post" class="uk-form uk-form-horizontal">
               <fieldset data-uk-margin>
                 <div class="field uk-form-row uk-form-horizontal">
                   <label for="name">Name: </label>
@@ -50,7 +52,7 @@
                   <label for="password">Password: </label>
                   <input type="password" id="password" name="password" required>
                 </div>
-                <div class="submit uk-form-row">
+                <div class="submit uk-form-row" id="form-submit">
                   <button type="submit" class="ghost-btn">Register!</button>
                 </div>
               </fieldset>
