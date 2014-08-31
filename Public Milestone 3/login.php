@@ -58,7 +58,7 @@
 							<input type="password" id="password" name="password" required>
 						</div>
 						<div class="submit uk-form-row">
-							<button type="submit" class="ghost-btn" id="submit">Login</button>
+							<button type="button" class="ghost-btn" id="submit">Login</button>
 						</div>
 					</fieldset>
 				</form>

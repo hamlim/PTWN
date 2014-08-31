@@ -9,18 +9,21 @@ $(document).ready(function() {
 		$inputs.each(function() {
 			values[this.name] = $(this).val();
 		});
-		console.log(values["uname"]);
+		console.log("username: " + values["uname"]);
+		console.log("password: " + values["password"]);
 		if(values["uname"] != "" && values["password"] != ""){
 			//input is there
-//			Parse.User.logIn(values["uname"], values["password"], {
-//				success: function(user){
-//					//successfully loged in
-//					window.location.href = "http://n.myrpi.org/account.php";
-//				},
-//				error: function(user, error){
-//					console.log("Error: " + error.code + " " + error.message);
-//				}
-//			});
-		}
+			Parse.User.logIn("test", "test", {
+				success: function(user){
+					//successfully loged in
+					window.location.href = "http://n.myrpi.org/account.php";
+				},
+				error: function(user, error){
+					console.log("Error: " + error.code + " " + error.message);
+				}
+			});
+		} else{
+			console.log("else statement");
+		};
 	});
 });
