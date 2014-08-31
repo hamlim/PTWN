@@ -29,7 +29,9 @@
 
 		<link rel="icon" href="css/icons/add.png"><!-- TODO : Change icon to generic account icon. -->
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/add.png">
-
+		
+		<!-- Parse -->
+		<script src="//www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
@@ -45,7 +47,7 @@
 		<article>
 			<section id="form">
 				<div id="error"></div>
-				<form id="account-form" method="post" action="accounts.php" class="uk-form uk-form-horizontal">
+				<form id="account-form" method="post" class="uk-form uk-form-horizontal">
 					<fieldset data-uk-margin>
 						<div class="field uk-form-row uk-form-horizontal">
 							<label for="username">Username: </label>
@@ -56,7 +58,7 @@
 							<input type="password" id="password" name="password" required>
 						</div>
 						<div class="submit uk-form-row">
-							<button type="submit" class="ghost-btn">Login</button>
+							<button type="submit" class="ghost-btn" id="submit">Login</button>
 						</div>
 					</fieldset>
 				</form>
@@ -64,7 +66,6 @@
 		</article>
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-        <!-- <script src="js/main.js"></script> -->
-		<script src="js/accounts.js"></script>
+		<script src="js/login.js"></script>
 	</body>
 </html>

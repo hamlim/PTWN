@@ -7,7 +7,6 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<meta http-equiv="refresh" content="900">
 		
 		<link rel="icon" href="css/icons/globe.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/globe.png">
@@ -64,8 +63,7 @@
 		<!-- for the account information. -->
 		<!-- TODO change this info to Account login/other stuff dynamically with JS -->
 		<div class="uk-offcanvas" id="about">
-			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-				<div id="dynamic-account-content"></div>
+			<div id="dynamic-account-content" class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 <!--
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">About CurrentWire:</h1>
