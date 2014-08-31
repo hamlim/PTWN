@@ -65,6 +65,7 @@
 		<!-- TODO change this info to Account login/other stuff dynamically with JS -->
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+				<div id="dynamic-account-content"></div>
 <!--
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">About CurrentWire:</h1>
