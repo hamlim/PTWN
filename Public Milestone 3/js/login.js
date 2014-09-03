@@ -13,6 +13,7 @@ $(document).ready(function() {
 		console.log("password: " + values["password"]);
 		if(values["uname"] != "" && values["password"] != ""){
 			//input is there
+			console.log("Past the If statement");
 			Parse.User.logIn("test", "test", {
 				success: function(user){
 					//successfully loged in

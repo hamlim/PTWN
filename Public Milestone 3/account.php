@@ -24,7 +24,7 @@
 		<meta name="application-name" content="CurrentWire">
 	</head>
 	<body>
-		<header class="card">
+		<header class="header">
 			<!-- first the basic header structure. -->
 			<nav>
 				<div class="uk-grid">
@@ -121,7 +121,6 @@
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
-    <script src="js/background-load.js"></script>
 		<script src="js/account.js"></script>
 			
 	</body>
