@@ -5,25 +5,28 @@
 
 body{
 	background: #dddddd;
-	background-image: url(http://unsplash.it/2000/2000?random);
-	background-size: 100%;
+	background-image: url(http://unsplash.it/3000/3000?random);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	color: #333;
 }
 article {
 	background-color: transparent;
 }
-nav {
-	margin-top: 2%;
-}
 .header {
 	position: absolute;
 	margin-left: 0% !important;
 	top: 0;
-	left:0;
-	background:white;
+	left: 0;
+	background: white;
 	margin:0 .5rem .5rem;
-	height: 12% !important;
+	height: 115px !important;
 	width: 100% !important;
+}
+nav {
+	margin-top: 15px;
 }
 .my-width {
 	width: 75%;
@@ -35,80 +38,17 @@ nav {
 	font-size: 24px;
 	line-height: 2em;
 }
-.my-width-footer {
-	width: 75%;
-	margin-left: 6.25%;
-	margin-top: 10%;
-	box-shadow: 0 1px 2px #aaa;
-	background: white;
-	border-radius: 3px;
-	font-size: 16px;
-	line-height: 2em;
-}
 .my-title {
-	font-size: 30px;
-}
-.my-width-signup {
-	width: 50%;
-	margin-left: 19%;
-	margin-top: 10%;
-	box-shadow: 0 1px 2px #aaa;
-	background: white;
-	border-radius: 3px;
-	font-size: 24px;
-	line-height: 2em;
-	text-align: center;
-	vertical-align: middle;
+	font-size: 1em;
+	font-weight: bold;
 }
 
-/* Button styles! */
-.ghost-btn {
-  font-family: "Arial";
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #3f6fa0;
-  height: 36px;
-  line-height: 36px;
-  color: #3f6fa0;
-  -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
-  -moz-background-clip: padding;
-  border-radius: 5px;
-  background-clip: padding-box;
-  font-size: 1em;
-  padding: .5em 1.5em;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  background: #ffffff;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  cursor: pointer;
-  zoom: 1;
-  -webkit-backface-visibility: hidden;
-  position: relative;
-}
-.ghost-btn:hover {
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease;
-  background-color: #3f6fa0;
-  color: #ffffff;
-}
-.ghost-btn:focus {
-  outline: none;
-}
 /* Handle different screen sizes */
 @media screen and (min-device-width: 1000px), screen and (min-width: 1000px){ /*desktop computer displays */
 	article {
 		margin-right: 7% !important;
 		margin-left: 13% !important;
 		margin-top: 10% !important;
-/*		background: #dddddd;*/
 	}
 	.tweet {
 	  padding:.25rem;
@@ -124,7 +64,6 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-/*		background: #dddddd;*/
 	}
 
 	.score {
@@ -185,8 +124,8 @@ nav {
 	article {
 		margin-right: 5.25% !important;
 		margin-left: 9.75% !important;
-		background: #dddddd;
 		margin-bottom: 2% !important;
+		margin-top: 115px !important;
 	}
 	.tweet {
 	  padding:.25rem;
@@ -202,7 +141,6 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background: #dddddd;
 	}
 
 	.score {
@@ -260,15 +198,15 @@ nav {
 	}
 }
 @media only screen and (max-device-width: 500), only screen and (max-width: 500px){ /*Mobile phones */
-	centre-title{
-		font-size: 15px !important;
+	centre-title {
+		font-size: 1em !important;
 		font-weight: bold !important;
 	}
 	article {
 		margin-right: 3.5% !important;
 		margin-left: 6.5% !important;
-		background: #dddddd;
 		margin-bottom: 2% !important;
+		margin-top: 115px !important;
 	}
 	.tweet {
 	  padding:.25rem;
@@ -284,7 +222,6 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background: #dddddd;
 	}
 
 	.score {
@@ -350,8 +287,8 @@ nav {
 	article {
 		margin-right: 3.5% !important;
 		margin-left: 6.5% !important;
-		background: #dddddd;
 		margin-bottom: 2% !important;
+		margin-top: 115px !important;
 	}
 	.tweet {
 	  padding:.25rem;
@@ -369,7 +306,6 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background: #dddddd;
 	}
 	.scores {
 		padding-left: 0px !important;
@@ -432,7 +368,7 @@ nav {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { /* iPhone 5 css */
 	/* .centre-title fix for iPhones and should be implemented in win-mo devices */
 	.centre-title {
-		font-size: 25px !important;
+		font-size: 1.25em !important;
 		font-weight: bold !important;
 	}
 	.centre-title-as {
@@ -441,8 +377,8 @@ nav {
 	article {
 		margin-right: 3.5% !important;
 		margin-left: 6.5% !important;
-		background: #dddddd;
 		margin-bottom: 2% !important;
+		margin-top: 115px !important;
 	}
 	.tweet {
 	  padding:.25rem;
@@ -458,7 +394,6 @@ nav {
 	section {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background: #dddddd;
 	}
 
 	.score {

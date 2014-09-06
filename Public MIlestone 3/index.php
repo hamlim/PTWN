@@ -89,28 +89,10 @@
 					<h1>Welcome to CurrentWire!</h1>
 				</div>
 			</div>
-			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
+			<section class="uk-align-center uk-panel uk-panel-space uk-container-center my-width">
 					<h4 class="uk-panel-title my-title">About:</h4>
 					<p>This product is still in an alpha stage, to get access to the news and content click on the sections link in the top left of the screen! If you find any problems please email me at hamlim@outlook.com, or contact me on twitter @immatthamlin. I hope you enjoy your experience!</p>
 			</section>
-<!--
-			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
-				<h3 class="uk-panel-title my-title">What is CurrentWire?</h1>
-				<p>CurrentWire is a curated news feed for you, the user. CurrentWire is full of sections that are created by curation specialists to create a better news reading experience. We the editors add in new secttions almost everyday!</p>
-			</section>
-			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width">
-				<h3 class="uk-panel-title my-title">How can I customize my experience?</h3>
-				<p>Easily! Simply sign-up for an account (which is currently free) and you can enter news feeds into the form, or simply provide us with a subject that you want news on or about and we can make the feed for you!</p>
-			</section>
-			<section class="uk-align-center uk-panel uk-panel-space uk-panel-divider uk-panel-box uk-panel-box-secondary uk-container-center my-width-signup">
-				<h3 class="uk-panel-title my-title">Sign-Up Now!</h3>
-				<p>Click the button below to begin signing up!</p>
-				<a class="uk-button uk-button-success ghost-btn" id="sign-up-button" href="createanaccount.html" title="Sign-Up">Sign-Up!</a>
-			</section>
-			<section class="uk-text-center uk-align-center uk-panel uk-panel-box uk-panel-box-secondary uk-container-center my-width-footer">
-				<span>CurrentWire was developed independently by Matt Hamlin at Forge Labs. </span>
-			</section>
--->
 		</article>
 		
 		
