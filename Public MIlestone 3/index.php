@@ -94,6 +94,19 @@
 					<p>This product is still in an alpha stage, to get access to the news and content click on the sections link in the top left of the screen! If you find any problems please email me at hamlim@outlook.com, or contact me on twitter @immatthamlin. I hope you enjoy your experience!</p>
 			</section>
 		</article>
+<!--
+        <footer class="sticky-footer">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             Currentwire-left 
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:120px;height:600px"
+                 data-ad-client="ca-pub-6969317571531183"
+                 data-ad-slot="1508045461"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </footer>
+-->
 		
 		
 		<!-- Include the important scripts. -->

@@ -253,9 +253,17 @@
 				</ul>
 			</section>
 		</article>
-		<footer>
-			
-		</footer>
+		<footer class="sticky-footer">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Currentwire-left -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:120px;height:600px"
+                 data-ad-client="ca-pub-6969317571531183"
+                 data-ad-slot="1508045461"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </footer>
 		
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
