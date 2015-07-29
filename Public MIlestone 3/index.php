@@ -90,7 +90,6 @@
 				</div>
 			</div>
 			<section class="uk-align-center uk-panel uk-panel-space uk-container-center my-width">
-					<h4 class="uk-panel-title my-title">About:</h4>
 					<p>Welcome to Trends, a site that keeps you up to date on the 10 most important tweets in several subjects.</p>
 			</section>
 		</article>
