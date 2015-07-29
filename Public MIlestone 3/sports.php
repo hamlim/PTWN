@@ -263,7 +263,7 @@
 						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li><a href="technology.php" title="Technology News">Technology News</a></li>
 						<li><a href="science.php" title="Science News">Science News</a></li>
-						<li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
+						<!-- <li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li> -->
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports News">Alt-Sports News</a></li>
 -->
@@ -282,7 +282,7 @@
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">About Trends:</h1>
-					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
+					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://matthamlin.me" target="_newtab">here</a>.</p>
 				</div>
 
 				<div class="uk-panel">
@@ -314,7 +314,7 @@
 <!--
 		<footer class="sticky-footer">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-             Trends-left 
+             Trends-left
             <ins class="adsbygoogle"
                  style="display:inline-block;width:120px;height:600px"
                  data-ad-client="ca-pub-6969317571531183"

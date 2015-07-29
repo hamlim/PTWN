@@ -45,7 +45,7 @@
 						<li><a href="business.php" title="Business News">Business News</a></li>
 						<li><a href="technology.php" title="Technology News">Technology News</a></li>
 						<li><a href="science.php" title="Science News">Science News</a></li>
-						<li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li>
+						<!-- <li><a href="seattle-local-example.php" title="Seattle Local News">Seattle Local News</a></li> -->
 <!--
 						<li><a href="alt-sports.php" title="Alternative Sports">Alt-Sports News</a></li>
 -->
@@ -64,7 +64,7 @@
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">About Trends:</h1>
-					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
+					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://matthamlin.me" target="_newtab">here</a>.</p>
 				</div>
 
 				<div class="uk-panel">
@@ -91,7 +91,7 @@
 			</div>
 			<section class="uk-align-center uk-panel uk-panel-space uk-container-center my-width">
 					<h4 class="uk-panel-title my-title">About:</h4>
-					<p>This product is still in an alpha stage, to get access to the news and content click on the sections link in the top left of the screen! If you find any problems please email me at hamlim@outlook.com, or contact me on twitter @immatthamlin. I hope you enjoy your experience!</p>
+					<p>Welcome to Trends, a site that keeps you up to date on the 10 most important tweets in several subjects.</p>
 			</section>
 		</article>
 <!--
