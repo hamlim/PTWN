@@ -1,7 +1,7 @@
 <?php
 	//require the proper twitter api class
 	require_once('TwitterAPIExchange.php');
-	
+
 	//settings array including the application keys and secrets
 	$settings = array(
 			'oauth_access_token' => "118285131-VKN74UIfSAGbe6Hv1Fud0BSVhRNYuL25Ij4l4WnF",
@@ -11,7 +11,7 @@
 	);
 	//base uri for retreiving the tweets
 	$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-	
+
 	//get fields for each news source
 	//I am sure that this could be developed in a for loop but I will
 	// simplify it as is for now (NOTE)
@@ -30,17 +30,17 @@
 	$getfields13 = '?screen_name=FIFAcom&count=10';
 	$getfields14 = '?screen_name=BBCSport&count=10';
 	$getfields15 = '?screen_name=NASCAR&count=10';
-	
+
 	//determine the method to request the tweets
 	$requestMethod = 'GET';
-	
-	
+
+
 	$twitter = new TwitterAPIExchange($settings);
 	//now we build our twitter object for each get field
 
 	//now to implement a method to save the tweets to a file on the server
 	//we want to create a date object and add that to an array of these tweet json arrays
-	//the date object will allow us to check if the time is > 15 minutes earlier, and if it is we 
+	//the date object will allow us to check if the time is > 15 minutes earlier, and if it is we
 	// will make the calls to retrieve the content.
 	// two new variables one is $file which is the json object from the text file if it exists
 	// the other is $timediff which if the text file exists then it calculates the diff in times from the current time
@@ -48,9 +48,9 @@
 	 * Now we check for the file's existence
 	*/
 	$sbool = true;
-	
-	
-	
+
+
+
 	if (!file_exists("sports-alt.txt")){// there is no file
 		$sbool = true;
 		//source 1
@@ -130,7 +130,7 @@
 		$currenttime = time();
 		$diff = $currenttime - $timestamp[0];
 		$diffmin = $diff / 60;
-		
+
 		if ($diffmin < 15){
 			$sbool = false;
 			$source1 = json_encode($arrays[0]);
@@ -214,13 +214,13 @@
 										 ->performRequest();
 		}
 	}
-	
-	
+
+
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CurrentWire: Sports</title>
+		<title>Trends: Sports</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
@@ -229,16 +229,16 @@
 		<meta http-equiv="refresh" content="900">
 		<link rel="icon" href="css/icons/sports.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/sports.png">
-		
-		
+
+
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
 		<link rel="stylesheet" href="css/main.css">
-		
+
 		<meta name="author" content="Matt Hamlin">
 		<meta name="keywords" content="Curated, simple, news">
-		<meta name="description" content="CurrentWire: The news reimagined">
-		<meta name="application-name" conent="CurrentWire">
+		<meta name="description" content="Trends: The news reimagined">
+		<meta name="application-name" conent="Trends">
 	</head>
 	<body>
 		<header class="header">
@@ -281,10 +281,10 @@
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
-					<h1 class="uk-panel-title">About CurrentWire:</h1>
-					<p>CurrentWire was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
+					<h1 class="uk-panel-title">About Trends:</h1>
+					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
 				</div>
-				
+
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">What are these numbers in circles?</h1>
 					<p>The numbers in the circles represent the score of the tweet. We have developed an advanced algorithm to track the trustworthiness of the sources and factor in the trustworthiness to calculate the score of specific tweets. This process is the method that we use to rank the tweets. The higher the score the more we think that that tweet is important to you.</p>
@@ -303,18 +303,18 @@
 				</div>
 			</div>
 			<section class="content uk-width-7-10 uk-container" id="1">
-				
+
 			</section>
 			<section class="scores uk-width-3-10 uk-container" id="2">
 				<ul class="uk-list">
-					
+
 				</ul>
 			</section>
 		</article>
 <!--
 		<footer class="sticky-footer">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-             Currentwire-left 
+             Trends-left 
             <ins class="adsbygoogle"
                  style="display:inline-block;width:120px;height:600px"
                  data-ad-client="ca-pub-6969317571531183"
@@ -324,7 +324,7 @@
             </script>
         </footer>
 -->
-		
+
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
@@ -348,7 +348,7 @@
 				console.log(arr14[i]);
 			}
 			var arr15 = <?php echo $source15; ?>;
-			
+
 			if (arr1.length != 10){
 				//error the site can't pull in the tweets
 				console.log("Error the site can't load in tweets");
@@ -358,6 +358,6 @@
 			var sbool = <?php echo json_encode($sbool); ?>;
 		</script>
 		<script src="js/main-s.js"></script>
-		
+
 	</body>
 </html>

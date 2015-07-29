@@ -1,7 +1,7 @@
 <?php
 	//require the proper twitter api class
 	require_once('TwitterAPIExchange.php');
-	
+
 	//settings array including the application keys and secrets
 	$settings = array(
 			'oauth_access_token' => "118285131-FibVndjY1h7htnF51Wb1VEyFqRvCmHkjQgL9g0Gw",
@@ -11,7 +11,7 @@
 	);
 	//base uri for retreiving the tweets
 	$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-	
+
 	//get fields for each news source
 	//I am sure that this could be developed in a for loop but I will
 	// simplify it as is for now (NOTE)
@@ -30,17 +30,17 @@
 	$getfields13 = '?screen_name=BBCTech&count=10';
 	$getfields14 = '?screen_name=RWW&count=10';
 	$getfields15 = '?screen_name=recode&count=10';
-	
+
 	//determine the method to request the tweets
 	$requestMethod = 'GET';
-	
-	
+
+
 	$twitter = new TwitterAPIExchange($settings);
 	//now we build our twitter object for each get field
 
 	//now to implement a method to save the tweets to a file on the server
 	//we want to create a date object and add that to an array of these tweet json arrays
-	//the date object will allow us to check if the time is > 15 minutes earlier, and if it is we 
+	//the date object will allow us to check if the time is > 15 minutes earlier, and if it is we
 	// will make the calls to retrieve the content.
 	// two new variables one is $file which is the json object from the text file if it exists
 	// the other is $timediff which if the text file exists then it calculates the diff in times from the current time
@@ -48,9 +48,9 @@
 	 * Now we check for the file's existence
 	*/
 	$sbool = true;
-	
-	
-	
+
+
+
 	if (!file_exists("tech.txt")){// there is no file
 		$sbool = true;
 		//source 1
@@ -130,7 +130,7 @@
 		$currenttime = time();
 		$diff = $currenttime - $timestamp[0];
 		$diffmin = $diff / 60;
-		
+
 		if ($diffmin < 15){
 			$sbool = false;
 			$source1 = json_encode($arrays[0]);
@@ -214,32 +214,32 @@
 										 ->performRequest();
 		}
 	}
-	
-	
+
+
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CurrentWire: Technology</title>
+		<title>Trends: Technology</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="refresh" content="900">
-		
+
 		<link rel="icon" href="css/icons/technology.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/technology.png">
-		
-			
+
+
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
 		<link rel="stylesheet" href="css/main.css">
-		
+
 		<meta name="author" content="Matt Hamlin">
 		<meta name="keywords" content="Curated, simple, news">
-		<meta name="description" content="CurrentWire: The news reimagined">
-		<meta name="application-name" conent="CurrentWire">
+		<meta name="description" content="Trends: The news reimagined">
+		<meta name="application-name" conent="Trends">
 	</head>
 	<body>
 		<header class="header">
@@ -282,8 +282,8 @@
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
-					<h1 class="uk-panel-title">About CurrentWire:</h1>
-					<p>CurrentWire was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
+					<h1 class="uk-panel-title">About Trends:</h1>
+					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
 				</div>
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">Formatting:</h1>
@@ -308,22 +308,22 @@
 			</div>
 			<div class="welcome-modal uk-modal">
 				<div class="uk-modal-dialog">
-					<h1>Welcome to CurrentWire!</h1>
+					<h1>Welcome to Trends!</h1>
 				</div>
 			</div>
 			<section class="content uk-width-7-10 uk-container" id="1">
-				
+
 			</section>
 			<section class="scores uk-width-3-10 uk-container" id="2">
 				<ul class="uk-list">
-					
+
 				</ul>
 			</section>
 		</article>
 <!--
 		<footer class="sticky-footer">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-             Currentwire-left 
+             Trends-left 
             <ins class="adsbygoogle"
                  style="display:inline-block;width:120px;height:600px"
                  data-ad-client="ca-pub-6969317571531183"
@@ -356,7 +356,7 @@
 				console.log(arr14[i]);
 			}
 			var arr15 = <?php echo $source15; ?>;
-			
+
 			if (arr1.length != 10){
 				//error the site can't pull in the tweets
 				console.log("Error the site can't load in tweets");
@@ -366,6 +366,6 @@
 			var sbool = <?php echo json_encode($sbool); ?>;
 		</script>
 		<script src="js/tech-main.js"></script>
-		
+
 	</body>
 </html>

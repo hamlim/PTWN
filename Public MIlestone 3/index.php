@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CurrentWire</title>
+		<title>Trends</title>
 		<meta name="mobile-web-app-capable" content="yes"> <!--Allows for mobile app launch. -->
 		<meta name="apple-mobile-web-app-cpable" content="yes">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="refresh" content="900">
-		
+
 		<link rel="icon" href="css/icons/index.png">
 		<link rel="shortcut icon" sizes="256x256" href="css/icons/index.png">
-		
-			
+
+
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/uikit.css">
 		<link rel="stylesheet" href="css/main.css">
-		
+
 		<meta name="author" content="Matt Hamlin">
-		<meta name="keywords" content="CurrentWire, simple, news">
-		<meta name="description" content="CurrentWire: The news reimagined">
-		<meta name="application-name" content="CurrentWire">
+		<meta name="keywords" content="Trends, simple, news">
+		<meta name="description" content="Trends: The news reimagined">
+		<meta name="application-name" content="Trends">
 	</head>
 	<body>
 		<header class="header">
@@ -28,7 +28,7 @@
 			<nav>
 				<div class="uk-grid">
 					<h3 class="sections uk-width-1-3 uk-text-center"><a href="#section" data-uk-offcanvas class="nolink uk-container-center">Sections</a></h3>
-					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Welcome to CurrentWire</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
+					<h1 class="centre-title uk-width-1-3 uk-text-center"><span class="uk-container-center">Trends</span></h1><!-- NOTE: this will change when we introduce multiple sections-->
 					<h3 class="about right-title uk-width-1-3 uk-text-center"><a href="#about" data-uk-offcanvas class="nolink uk-container-center">About</a></h3>
 				</div>
 			</nav>
@@ -63,10 +63,10 @@
 		<div class="uk-offcanvas" id="about">
 			<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
 				<div class="uk-panel">
-					<h1 class="uk-panel-title">About CurrentWire:</h1>
-					<p>CurrentWire was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
+					<h1 class="uk-panel-title">About Trends:</h1>
+					<p>Trends was developed by Matt Hamlin (on Twitter: <a href="https://twitter.com/immatthamlin" target="_newtab">@immatthamlin</a>) over spring break (2014) at RPI. The idea was developed and then implemented using the Twitter API. You can find more work by Matt <a href="http://hamlim.campuslist.myrpi.org" target="_newtab">here</a>.</p>
 				</div>
-				
+
 				<div class="uk-panel">
 					<h1 class="uk-panel-title">What are these numbers in circles?</h1>
 					<p>The numbers in the circles represent the score of the tweet. We have developed an advanced algorithm to track the trustworthiness of the sources and factor in the trustworthiness to calculate the score of specific tweets. This process is the method that we use to rank the tweets. The higher the score the more we think that that tweet is important to you.</p>
@@ -86,7 +86,7 @@
 			</div>
 			<div class="welcome-modal uk-modal">
 				<div class="uk-modal-dialog">
-					<h1>Welcome to CurrentWire!</h1>
+					<h1>Welcome to Trends!</h1>
 				</div>
 			</div>
 			<section class="uk-align-center uk-panel uk-panel-space uk-container-center my-width">
@@ -97,7 +97,7 @@
 <!--
         <footer class="sticky-footer">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-             Currentwire-left 
+             Trends-left
             <ins class="adsbygoogle"
                  style="display:inline-block;width:120px;height:600px"
                  data-ad-client="ca-pub-6969317571531183"
@@ -107,13 +107,13 @@
             </script>
         </footer>
 -->
-		
-		
+
+
 		<!-- Include the important scripts. -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/uikit.min.js"></script>
         <script src="js/background-load.js"></script>
-		
-			
+
+
 	</body>
 </html>
